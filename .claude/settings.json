@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "PowerShell($c = Get-Command gh -ErrorAction SilentlyContinue; if \\($c\\) { \"FOUND: \" + $c.Source; gh auth status } else { \"gh NOT installed\" })",
+      "Bash(rm -rf .git && echo \"Локальный .git удалён.\" && echo \"---Осталось в папке:---\" && ls -la)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\katan\\Downloads\\изучение английского\\.git"
+    ]
+  }
+}
